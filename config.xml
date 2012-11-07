@@ -15,5 +15,5 @@ It also allows you to encode/decode Hex numbers as well as URLS.
 Joseph Votto
 </author>
 <preference name="permissions" value="none"/>
-<icon src="base64_icon.png" width="72" height="72" />
+<icon src="icon.png" width="72" height="72" />
 </widget>
