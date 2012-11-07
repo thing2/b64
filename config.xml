@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.phonegap.example"
+    version   = "1.0.0">
+
+<name>Base64 Encoder and Decoder</name>
+
+<description>
+This application allows you to take plain text and encode it into Base64 as well as to decode Base64 into plain text.
+It also allows you to encode/decode Hex numbers as well as URLS.
+</description>
+
+<author email="josephprimo@live.com">
+Joseph Votto
+</author>
+<preference name="permissions" value="none"/>
+<icon src="base64_icon.png" width="72" height="72" />
+</widget>
