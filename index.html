@@ -207,34 +207,20 @@ function decodeHex(str){
 
 <form name=code onsubmit="return false()">
 <textarea rows=18 name=text style='width:100%;height:75%;' onfocus='if (this.value=="Enter text to encode or decode here."){this.value="";}'>Enter text to encode or decode here</textarea>
-<table align="center">
-<tr><td align=center>
-<input value="Encode" type=button onclick="document.code.text.value=urlEncode(document.code.text.value);">
-</td><td align=center>
-URL
-</td><td align=center>
-<input value="Decode" type=button onclick="document.code.text.value=urlDecode(document.code.text.value);">
-</td></tr>
-<tr><td align=center>
-<input value="Encode" type=button onclick="document.code.text.value=encodeBase64(document.code.text.value);">
-</td><td align=center>
-Base 64
-</td><td align=center>
-<input value="Decode" type=button onclick="document.code.text.value=decodeBase64(document.code.text.value);">
-</td></tr>
-<tr><td align=center>
-<input value="Encode" type=button onclick="document.code.text.value=encodeHex(document.code.text.value);">
-</td><td align=center>
-Hex
-</td><td align=center>
-<input value="Decode" type=button onclick="document.code.text.value=decodeHex(document.code.text.value);">
-</td></tr>
-<tr><td align=center>
-</td><td align=center>
-<input type=reset value=Clear>
-</td><td align=center>
-</td></tr>
-</table>
+<input value="URL Encode" type=button onclick="document.code.text.value=urlEncode(document.code.text.value);">
+<br/>
+<input value="URL Decode" type=button onclick="document.code.text.value=urlDecode(document.code.text.value);">
+<br/>
+<input value="Base64 Encode" type=button onclick="document.code.text.value=encodeBase64(document.code.text.value);">
+<br/>
+<input value="Base64 Decode" type=button onclick="document.code.text.value=decodeBase64(document.code.text.value);">
+<br/>
+<input value="HEX Encode" type=button onclick="document.code.text.value=encodeHex(document.code.text.value);">
+<br/>
+<input value="HEX Decode" type=button onclick="document.code.text.value=decodeHex(document.code.text.value);">
+<br/>
+<input type=reset value=Clear align=Center>
+
 </form>
 <hr>
 
