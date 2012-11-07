@@ -8,11 +8,12 @@
 <script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
 <body>
 <div data-role="page" id="homepage">
+
   <div data-role="header">
     <h1>Encoder/Decoder</h1>
   </div>
   <div data-role="content">
-  
+ 
 <script language=javascript type="text/javascript">
 <!--
 function urlDecode(str){
@@ -203,7 +204,24 @@ function decodeHex(str){
 
 </head>
 <body>
+<script type="text/javascript">
+var admob_vars = {
+  pubid: 'a1509a0b9b08a4b', // publisher id
+  bgcolor: 'ffffff', // background color (hex)
+  text: '000000', // font-color (hex)
+  test: true, // test mode, set to false if non-test mode
+  manual_mode: true
+ 
+};
 
+function showAd()
+{
+     //alert("show ad");
+    _admob.fetchAd(document.getElementById('adspace'));
+
+}
+</script>
+<script type="text/javascript" src="http://mm.admob.com/static/iphone/iadmob.js"></script>
 <form name=code onsubmit="return false()">
 <textarea rows=25 name=text style='width:100%;height:75%;' onfocus='if (this.value=="Enter text to encode or decode here."){this.value="";}'>Enter text to encode or decode here</textarea>
 <table align="center">
